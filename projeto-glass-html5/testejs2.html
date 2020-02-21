@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script>
+        function acendeLampada(){
+            // Esse foi o exemplo inicial, vamos para a funcao oficial agora kk
+            //alert("Lâmpada acendeu!");
+            // comando para acender a lampada, nesse caso temos uma imagem que é
+            // a da lampada acessa assim vamos fazer a funcao para trocar as imagens
+            //para alterar um objeto a primeira coisa que devemos fazer é dar uma identificacao pra ele 
+            document.getElementById("apagada").src = "_imagens/lampada-acesa.jpg";
+           
+        }
+
+        function acendeLampada1(){
+            document.getElementById("apagada1").src = "_imagens/lampada-acesa.jpg";
+        }
+
+        // quando passamos ou clicamos com o mouse ele deixa o objeto alterado
+        //por esse motivo, vamos fazer as funções pra desligar as lampadas.
+
+        function apagaLampada(){
+            document.getElementById("apagada").src="_imagens/lampada-apagada.jpg";
+
+
+        }
+
+        function apagaLampada1(){
+            document.getElementById("apagada1").src="_imagens/lampada-apagada.jpg";
+        }
+
+        function quebraLampada() {
+            document.getElementById("apagada1").src= "_imagens/lampada-quebrada.jpg";
+        }
+    </script>
+</head>
+<body>
+<h1>
+    Acenda a lâmpada
+</h1>
+<!--o onclick é usado para quando o usuario clicar no objeto, algo aconteça
+nesse caso estamos usando (disparando a função alert por enquanto)-->
+<!--<img src="_imagens/lampada-apagada.jpg" id = "apagada" onclick="acendeLampada()" onmouseout="apagaLampada()"/> -->
+
+<!--o onmousemove é usado para quando o usuario passar o mouse por cima do objeto 
+    assim o onmousemove serve para disparar determinada função ou mudanca de estado 
+no objeto a partir do momento em que o mouse passa por cima do objeto, o onmouseout é utilizado quando queremos que ao retirar o ponteiro
+do mouse de cima do objeto algo aconteca nesse caso o que ocorre é a imagem ser trocada e consequentemente visualmente a luz ser acendida.
+Outro efeito que eu quero fazer é o de ao clicar sobre a lâmpada a lâmpada seja quebrada, assim usarei a função onclick-->
+<img src= "_imagens/lampada-apagada.jpg"  id = "apagada1" onmousemove="acendeLampada1()" onmouseout="apagaLampada1()" onclick="quebraLampada()"/>
+</body>
+</html>
