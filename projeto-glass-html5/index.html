@@ -31,7 +31,7 @@
     </ul>
 </nav class>
         </header>
-
+<!--section é a área principal do site, as configurações dessas áreas são feitas no css-->
 <section id = "corpo">
     <!--Uso da tag <article>-->
 <article id="noticia-principal">
@@ -78,10 +78,13 @@ usamos este parametro quando queremos que uma mesma célula ocupe mais de uma co
 <!--Outro conceito muito importante é que ao utilizamos um id
 tanto em HTML quanto em CSS ele só pode ser aplicado pra um objeto
 e não pra vários, mas agora vamos ver um conceito importante que é o conceito de classe
-Uma classe define a formatação de vários objetos, então cada objeto vai ter o seu id, mas euposso colocar a mesma classe para varios objetos 
- Vamos fazer isso abaixo, para as células que irão ficar a esquerda iremos usar o id ce, para
-as classes que vao ficar a direita iremos usar 
+Uma classe define a formatação de vários objetos, então cada objeto vai ter o seu id, mas eu posso colocar a mesma classe para varios objetos 
+ Vamos fazer isso abaixo, para as células que irão ficar a esquerda iremos usar o id da class ce e para
+as classes que vao ficar a direita iremos usar cd
 -->
+
+<!--O rowspan é utilizado para determinar quantas linhas o objeto vai ocupar na tabela
+Existe também o coldspan, ele não será utilizado nesse site, mas... ele ocupará a quantidade de colunas que for passada como parametro.-->
 <tr><td rowspan="2" class = "ce">Camera</td><td class="cd">5MP para fotos</td></tr>
 <tr><td class="cd">720p para vídeos</td></tr>
 <tr><td rowspan="2" class = "ce">Conectividade</td><td class="cd"> Wifi</td></tr>
@@ -98,6 +101,7 @@ as classes que vao ficar a direita iremos usar
 <!-- Termina aqui a parte principal do site, ou seja é a section -->
 </article>
 </section>
+<!--O aside é a área secundária / periférica do site-->
 <aside id = "lateral">
 
 <h1>Outras Notícias</h1>
@@ -111,8 +115,10 @@ as classes que vao ficar a direita iremos usar
 <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
 </aside id = "lateral">
 
+<!--O footer é o rodapé da página-->
 <footer id = "rodape">
     <p>Copyright &copy; 2013 - by Gustavo Guanabara </br>
+        <!--Para que os links sejam abertos em outras abas, usa-se o target = _blank -->
         <a href="http: //facebook.com/cursoemvideo" target= "_blank"> Facebook </a>|
         <a href = "http://twitter.com/cursosemvideo" target= "_blank"> Twitter </a></p>
         </footer>
