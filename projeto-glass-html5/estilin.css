@@ -1,11 +1,21 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+
 body h1{
-    font-family:"Open Sans",Helvetica,Arial,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
+    font-style: normal;
+    color: #404040;
+    font-weight: 600;
     text-align: center;
+    margin-top: 60px;
 }
 
 #luz{
     position: absolute;
-    margin-left: 550px;
+    left: 520px;
     width: 250px;
+    top: 170px;
 }

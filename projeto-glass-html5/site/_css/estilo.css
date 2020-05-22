@@ -173,7 +173,6 @@ nav#menu ul{
 
     */
     left: 500px;
-    
 }
 
 /* Aqui, estou formatando todo o nav com o id menu, sendo este li
@@ -191,15 +190,17 @@ nav#menu li{
 
     padding: 9px ;
 
+
     /*
     A margem fica responsável pelo distanciamento dos objetos.
     */
 
     margin: 2px;
 
-     transition: background-color 1s;
+    transition: background-color 1s;
 
-     
+    border-radius: 3px;
+    
 }
 
 nav#menu li:hover {
@@ -213,9 +214,11 @@ nav#menu h1{
 
 nav#menu a{
     color: black;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+    text-decoration: none;
+    font-family:'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
 }
 nav#menu a:hover{
     color: #ffffff;
@@ -354,7 +357,7 @@ aside#lateral{
 
 aside#lateral h1{
     font-size: 20pt;
-    color: #606060;
+    color: #555555;
     margin-top: 0px;
     
 
@@ -377,3 +380,4 @@ footer#rodape p{
     text-align: center;
 
 }
+0

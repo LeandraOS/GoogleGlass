@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <title></title>
+    <title>Acende Lâmpada</title>
     <link rel = "stylesheet" href= "estilin.css"/>
     <meta charset="utf-8"/>
     <script>
@@ -21,10 +20,11 @@
     
 </head>
 <body>
+
 <h1>
     Acenda a lâmpada
 </h1>
-<!--o onclick é usado para quando o usuario clicar no objeto, algo aconteça
+<!--os on alguma coisa são chamadas dentro do HTML, o onclick é usado para quando o usuario clicar no objeto, algo aconteça
 nesse caso estamos usando (disparando a função alert por enquanto)-->
 <!--<img src="_imagens/lampada-apagada.jpg" id = "apagada" onclick="acendeLampada()" onmouseout="apagaLampada()"/> -->
 
@@ -33,7 +33,7 @@ nesse caso estamos usando (disparando a função alert por enquanto)-->
 no objeto a partir do momento em que o mouse passa por cima do objeto, o onmouseout é utilizado quando queremos que ao retirar o ponteiro
 do mouse de cima do objeto algo aconteca nesse caso o que ocorre é a imagem ser trocada e consequentemente visualmente a luz ser acendida.
 Outro efeito que eu quero fazer é o de ao clicar sobre a lâmpada a lâmpada seja quebrada, assim usarei a função onclick-->
+<aside id="lateral">
 <img src= "_imagens/lampada-apagada.jpg"  id = "luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
 </body>
-
 </html>
