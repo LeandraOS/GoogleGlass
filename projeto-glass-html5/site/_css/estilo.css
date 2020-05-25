@@ -23,7 +23,7 @@ div#interface{
     O margin é a parte externa do objeto.
     */
     
-    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.4);
     /* O padding que é o espaço interno do objeto.
     Tem os mesmos parametros : cima, direita, baixo, esquerda
     Se todos os parametros tiverem o mesmo valor, podemos colocá-lo 
@@ -37,6 +37,7 @@ p{
     text-align: justify;
     text-indent: 25px; 
 }
+
 a{
     color: #404040;
     text-decoration: none;
@@ -380,4 +381,3 @@ footer#rodape p{
     text-align: center;
 
 }
-0
