@@ -1,11 +1,11 @@
-@charset "utf-8"
+@charset "UTF-8";
 
 section#conteudo{
     width: 1000px ;
     margin: auto;
 
 }
-/* para sinalizar que o que está sendo chamado é o id, usa-se o #*/
+
 iframe#frame-spec{
     width: 450px;
     height:300px ;
@@ -13,7 +13,7 @@ iframe#frame-spec{
     overflow: hidden;
 
 }
-/* utilizado para retirar a barra de rolagem do documento */
+
 iframe#frame-spec::-webkit-scrollbar {
     display: none;
 }

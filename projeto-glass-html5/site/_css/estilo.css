@@ -13,24 +13,13 @@ body{
     background-color:#dddddd ;
     color: rgba(red, green, blue, alpha)
 }
+
 div#interface{
     width: 1200px;
     background-color: #ffffff;
-    /* Os parametros sao: cima, direita, baixo e esquerda 
-    */
     margin: -20px auto 0px auto;
-    /* Tô utilizando para dar uma sombra na parte branca, dando um alto relevo mais ou menos em relação ao cinza.
-    O margin é a parte externa do objeto.
-    */
-    
     box-shadow: 0px 0px 10px rgba(0,0,0,.4);
-    /* O padding que é o espaço interno do objeto.
-    Tem os mesmos parametros : cima, direita, baixo, esquerda
-    Se todos os parametros tiverem o mesmo valor, podemos colocá-lo 
-    apenas uma vez, como feito abaixo.
-    */
     padding: 10px ;
-    
 }
 
 p{
@@ -44,35 +33,21 @@ a{
 }
 a:hover{
     text-decoration:underline;
-
 }
+
 header#cabecalho img#icone{
     position: absolute;
     left: 1085px;
     top: 50px;
 }
+
 header#cabecalho{
-    /* border-bottom será ultilizado para criar a borda inferior.
-    Os seus parametros são:
-    largura em pixels, cor e estilo, sendo este podendo ser solido, pontilhado e etc.
-    */
-
     border-bottom: 1px #dddddd solid;
-    /* Altura do cabeçalho 
-    */
-
     height: 160px;
-    /*
-    No caso do meu cabeçalho o seu fundo será uma imagem, assim:
-    Utilizamos o url para referenciarmos onde o objeto que queremos está 
-    o .. serve para voltarmos uma página.
-    outros parametros que iremos utilizar é o deslocamento lateral e o deslocamento vertical 
-    */
     background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0px 100px ;
-
 }
-header#cabecalho h1{
 
+header#cabecalho h1{
     font-family: 'Red Hat Display', sans-serif;
     font-size:30pt;
     color: #777777;
@@ -83,129 +58,66 @@ header#cabecalho h1{
 }
 
 header#cabecalho h2{
-
-   font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #606060;
     font-size: 15pt;
     margin-left: 9px;
     padding: 0px;
     margin-top: 0px;
 }
-/*Formatação de imagens com legendas*/
+
 figure.foto-legenda{
     position: relative;
     border: 8px solid white;
     border-radius: 3px;
-    box-shadow: 1px 1px 3px black;
-    
-        
+    box-shadow: 1px 1px 3px black;        
 }
 
 figure.foto-legenda img{
     width: 100%;
     height: 100%;
 }
+
 figure.foto-legenda figcaption{
     opacity: 0;
     position: absolute;
     top: 0px;
-    /*Para a transparencia da legenda
-    */
     background-color:rgba(0,0,0,.3);
-    /*Para a cor da letra utilizada na legenda
-    */
     color: white;
-    /*
-    Para que a borda que foi criada através do background-color
-    ocupe todo o espaço da imagem que irá utiliza-lo
-    */
     width: 100%;
     height: 99%;
-    /*
-    Para um maior espaço da legenda:
-    */
     padding: 10px;
-    /*
-    Porém um problema foi detectado, este problema foi que a borda
-    ultrapassou a imagem, usando o comando abaixo conseguimos resolver.
-    O border-box serve para criar uma box dentro da borda*/
     box-sizing: border-box;
-
-    /*
-    Adicionando um efeito de transição:
-    */
     transition: opacity 1s;
     border-radius: 3px;
 }
 
- /*
-    Para a criação do efeito de quando passar o mouse, a legenda ser exibida
-    o comando hover será utilizado, ele irá disparar uma classe especifíca 
-    ou/e formatação específica, quando o mouse for passado por cima do objeto, que nesse caso é o figcaption.
-    */
-
 figure.foto-legenda:hover figcaption{
     opacity: 1;
 }
-/*Formatação do menu
-*/
+
 nav#menu{
     display: block;
 }
+
 nav#menu ul{
-    /* Para que os marcadores do menu do tipo square por exemplo, seja tirado:
-    */
     list-style: none;
-    /* Para que o texto fique todo em maiúsculo
-    */
     text-transform: uppercase ;
-    /* Para a posição do menu, exitem dois tipos: o absolute e o 
-    relative, o absoluto quer dizer que ele poderá ser colocado
-    dentro de qualquer lugar ou em em qualquer lugar dentro do site.
-    Já o relative, ele só poderá ser colocado dentro do bloco ao qual pertence.
-    */
     position: absolute;
-    /*o top, é o topo, ou seja a distancia do objeto atá o topo da página.
-
-    */
     top: -20px;
-    /*
-    O left é a quantidade que desejo que o objeto vá para a direita.
-
-    */
     left: 500px;
 }
 
-/* Aqui, estou formatando todo o nav com o id menu, sendo este li
-*/
 nav#menu li{
-    /*Esse comando faz com que todos os objetos fiquem na horizontal.
-    */
     display: inline-block;
-    /* Cor de fundo dos objetos.
-    */
     background-color:#dddddd;
-
-    /*Preenchimento de objeto
-    */
-
     padding: 9px ;
-
-
-    /*
-    A margem fica responsável pelo distanciamento dos objetos.
-    */
-
     margin: 2px;
-
     transition: background-color 1s;
-
     border-radius: 3px;
-    
 }
 
 nav#menu li:hover {
-    
     background-color: #858585;
 }
 
@@ -215,27 +127,20 @@ nav#menu h1{
 
 nav#menu a{
     color: black;
-
     text-decoration: none;
     font-family:'Lato', sans-serif;
     font-weight: 600;
     font-size: 15px;
 }
+
 nav#menu a:hover{
     color: #ffffff;
-    
 }
 
 section#corpo{
-    /* O display: block; serve para que a formatção dessa área seja toda feita em um bloco.
-    */
     display: block;
     width: 600px;
-    /* O float é utilizado para fazer com que o objeto que
-    queremos colocar no site consiga flutuar por onde queremos que ele vá.
-    */
     float: left;
-    /*espessura da borda, tipo da linha e a cor*/
     border-right: 1px solid #dddddd;
     padding-right: 20px;
     margin-left: 6px;
@@ -249,7 +154,6 @@ article#noticia-principal h2{
     padding: 5px 0px 5px 10px;
     margin: 15px 0px 15px 0px;
     border-radius: 3px;
-    
 }
 
 header#cabecalho-artigo h1{
@@ -259,71 +163,48 @@ header#cabecalho-artigo h1{
     margin-bottom: 0px;
     margin-top: 0px;
 }
+
 .direita{
     text-align: right;
 }
+
 header#cabecalho-artigo h2{
     font-size: 13pt;
     color: #cecece;
     background-color: #ffffff;
     margin: 10px;
-
-
 }
+
 header#cabecalho-artigo h3{
     font-size: 12px;
     color: #606060;
 
 }
+
 table#tabelaspec{
     border: 1px solid #909090;
-    /* o border-spacing é utilizado para dar os espacos entre
-    os td (celulas).
-    */
     border-spacing:0px ;
-    /* para centralizar a tabela iremos utilizar o margin-left e margin right
-
-    */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
     border-radius: 3px;
 }
 
-
 table#tabelaspec td{
     border: 1px solid #909090;
-    /* Para dar mais espaco dentro de cada tabela iremos 
-    utilizar o padding, assim criaremos o espaco dentro de cada celula
-    */
     padding: 10px;
-
-    /* Para fazer o alinhamento dos textos dentro das celulas
-      existem dois tipos de alinhamentos dentro das tabelas 
-      temos o alinhamento de texto que é o text-align e o alinhamento vertical 
-      que é p vertical-align
-     
-    */
     text-align: left ;
     vertical-align: middle ;
-
 }
-/* Utilizamos o .ce para identificar a classe 
-*/
-/*Na formatacao principal temos definido o vertical-align para middle
-Na formatacao da classe temos o vertical-align para top
-Nesse caso a classe ira sobrepor o que foi definido para a tag principal.
-*/
+
 table#tabelaspec td.ce{
     color:#ffffff;
     background-color: #909090;
     vertical-align: top;
-
-
 }
+
 table#tabelaspec td.cd{
     background-color: #cecece;
-
 }
 
 table#tabelaspec caption{
@@ -338,8 +219,6 @@ table#tabelaspec caption span{
     float: right;
     color: #000000;
     font-size: 8pt;
-    /* quanto maior o valor do parametro mais para baixo ele vai estar
-    */
     margin-top: 25px;
 }
 
@@ -353,16 +232,14 @@ aside#lateral{
     margin-top: 10px;
     box-shadow: 3px 2px 2px  rgba(0,0,0,0.5);
     border-radius: 3px;
-    
 }
 
 aside#lateral h1{
     font-size: 20pt;
     color: #555555;
     margin-top: 0px;
-    
-
 }
+
 aside#lateral h2{
     background-color: #909090;
     font-size: 13pt;
@@ -370,13 +247,12 @@ aside#lateral h2{
     padding: 5px;
     border-radius: 3px;
 }
+
 footer#rodape{
-    /*o clear both limpa as configuracoes que já tínhamos
-    colocado antes, logo ele ficará normal / default*/
     clear: both;
     border-top:1px solid #dddddd;
-
 }
+
 footer#rodape p{
     text-align: center;
 
