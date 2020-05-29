@@ -42,7 +42,7 @@ header#cabecalho img#icone{
 }
 
 header#cabecalho{
-    padding: 5px;
+    padding:5px;
     border-bottom: 1px #dddddd solid;
     height: 160px;
     background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0px 100px ;
@@ -55,6 +55,7 @@ header#cabecalho h1{
     text-shadow: 1px 1px 1px rgba(0, 0, 0,0.3 );
     padding: 0px;
     margin-left: 12px;
+    margin-top: 30px;
     margin-bottom: 0px;
 }
 
