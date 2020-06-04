@@ -1,4 +1,4 @@
-# Google Glass
+# :eyeglasses: Google Glass
 
 Site desenvolvido como exercício prático do aprendizado adquirido com o curso de HTML, CSS e JavaScript disponibilizado pelo canal [Curso em Vídeo](https://www.youtube.com/playlist?list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o).
 
